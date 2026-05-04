@@ -1,4 +1,4 @@
-const player1 = {
+export const player1 = {
   name: "Mario",
   velocity: 4,
   manobra: 3,
@@ -6,7 +6,7 @@ const player1 = {
   pontos: 0,
 };
 
-const player2 = {
+export const player2 = {
   name: "Luigi",
   velocity: 3,
   manobra: 4,
