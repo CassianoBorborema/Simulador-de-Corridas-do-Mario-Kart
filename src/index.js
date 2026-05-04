@@ -7,6 +7,5 @@ import { raceEngine } from "./usecases/raceEngine.js";
     `🏁🚥 Corrida entre ${player1.name} e ${player2.name} começando...\n`,
   );
 
-  const blocks = raceEngine(player1, player2);
-  console.log(`Blocos sorteados: ${blocks.join(" | ")}`);
+  await raceEngine(player1, player2);
 })();
