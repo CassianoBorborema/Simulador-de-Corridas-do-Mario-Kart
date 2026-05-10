@@ -1,5 +1,6 @@
 import { player1, player2 } from "./entities/objects.js";
 import { raceEngine } from "./usecases/raceEngine.js";
+import { declareWinner } from "./usecases/declareWinner.js";
 
 //function auto invoke
 (async function main() {
@@ -8,4 +9,6 @@ import { raceEngine } from "./usecases/raceEngine.js";
   );
 
   await raceEngine(player1, player2);
+
+  declareWinner(player1, player2);
 })();

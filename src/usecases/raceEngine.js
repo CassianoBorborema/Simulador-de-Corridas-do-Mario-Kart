@@ -54,11 +54,35 @@ export async function raceEngine(player1, player2) {
         player2.manobra,
       );
     }
-    if (block === "CONFRONTO") {
-      let powerResult1 = diceResult1 + player1.power;
-      let powerResult2 = diceResult2 + player2.power;
-    }
 
+    if (block === "CONFRONTO") {
+      const powerResult1 = diceResult1 + player1.power;
+      const powerResult2 = diceResult2 + player2.power;
+
+      console.log(`${player1.name} confrontou com ${player2.name}!🥊`);
+      await logRollResult(player1.name, "power", diceResult1, player1.power);
+      await logRollResult(player2.name, "power", diceResult2, player2.power);
+
+      if (powerResult1 === powerResult2) {
+        console.log(`Confronto Empatado! Nenhum Ponto foi perdido`);
+      } else if (powerResult1 > powerResult2) {
+        // player1 venceu, então quem perde é o player2
+        if (player2.pontos > 0) {
+          player2.pontos -= 1;
+          console.log(`${player2.name} perdeu 1 ponto 🐢`);
+        } else {
+          console.log(`${player2.name} não perdeu ponto(s)`);
+        }
+      } else {
+        // player2 venceu, então quem perde é o player1
+        if (player1.pontos > 0) {
+          player1.pontos -= 1;
+          console.log(`${player1.name} perdeu 1 ponto 🐢`);
+        } else {
+          console.log(`${player1.name} não perdeu ponto(s)`);
+        }
+      }
+    }
     //verify winner
     if (totalTestSkill1 > totalTestSkill2) {
       console.log(`${player1.name} marcou um ponto!`);
@@ -66,6 +90,8 @@ export async function raceEngine(player1, player2) {
     } else if (totalTestSkill2 > totalTestSkill1) {
       console.log(`${player2.name} marcou um ponto!`);
       player2.pontos++;
+    } else if (totalTestSkill1 === totalTestSkill2 && block !== "CONFRONTO") {
+      console.log(`Empate`);
     }
 
     console.log("=========================================================");
