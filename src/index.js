@@ -10,5 +10,5 @@ import { declareWinner } from "./usecases/declareWinner.js";
 
   await raceEngine(player1, player2);
 
-  declareWinner(player1, player2);
+  await declareWinner(player1, player2);
 })();

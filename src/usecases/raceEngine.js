@@ -66,7 +66,6 @@ export async function raceEngine(player1, player2) {
       if (powerResult1 === powerResult2) {
         console.log(`Confronto Empatado! Nenhum Ponto foi perdido`);
       } else if (powerResult1 > powerResult2) {
-        // player1 venceu, então quem perde é o player2
         if (player2.pontos > 0) {
           player2.pontos -= 1;
           console.log(`${player2.name} perdeu 1 ponto 🐢`);
@@ -74,7 +73,6 @@ export async function raceEngine(player1, player2) {
           console.log(`${player2.name} não perdeu ponto(s)`);
         }
       } else {
-        // player2 venceu, então quem perde é o player1
         if (player1.pontos > 0) {
           player1.pontos -= 1;
           console.log(`${player1.name} perdeu 1 ponto 🐢`);

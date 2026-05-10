@@ -1,4 +1,4 @@
-//Geração de pistas e rodadas
+//Geração de pistas
 export function getRandomBlock() {
   const random = Math.floor(Math.random() * 3);
 
