@@ -7,7 +7,7 @@
             </td>
             <td>
                 <b>Objetivo:</b>
-                <p>Mario Kart é uma série de jogos de corrida desenvolvida e publicada pela Nintendo. Nosso desafio será criar uma lógica de um jogo de vídeo game para simular corridas de Mario Kart, levando em consideração as regras e mecânicas abaixo.</p>
+                <p>Mario Kart é uma série de jogos de corrida desenvolvida e publicada pela Nintendo. Nosso desafio será criar uma lógica de um jogo de vídeo game para simular corridas de Mario Kart, levando em consideração as regras e mecânicas abaixo. Além de praticar lógica de programação com regras de negócio em conjunto com NODE.JS</p>
             </td>
         </tr>
     </table>
@@ -21,7 +21,7 @@
             </td>
             <td style="border: 1px solid black; text-align: center;">
                 <p>Velocidade: 4</p>
-                <p>Manobrabilidade: 3</p>
+                <p>Manobra: 3</p>
                 <p>Poder: 3</p>
             </td>
              <td style="border: 1px solid black; text-align: center;">
@@ -30,7 +30,7 @@
             </td>
             <td style="border: 1px solid black; text-align: center;">
                 <p>Velocidade: 3</p>
-                <p>Manobrabilidade: 4</p>
+                <p>Manobra: 4</p>
                 <p>Poder: 2</p>
             </td>
               <td style="border: 1px solid black; text-align: center;">
@@ -39,7 +39,7 @@
             </td>
             <td style="border: 1px solid black; text-align: center;">
                 <p>Velocidade: 2</p>
-                <p>Manobrabilidade: 4</p>
+                <p>Manobra: 4</p>
                 <p>Poder: 3</p>
             </td>
         </tr>
@@ -50,7 +50,7 @@
             </td>
             <td style="border: 1px solid black; text-align: center;">
                 <p>Velocidade: 5</p>
-                <p>Manobrabilidade: 2</p>
+                <p>Manobra: 2</p>
                 <p>Poder: 5</p>
             </td>
             <td style="border: 1px solid black; text-align: center;">
@@ -59,7 +59,7 @@
             </td>
             <td style="border: 1px solid black; text-align: center;">
                 <p>Velocidade: 3</p>
-                <p>Manobrabilidade: 4</p>
+                <p>Manobra: 4</p>
                 <p>Poder: 4</p>
             </td>
             <td style="border: 1px solid black; text-align: center;">
@@ -68,7 +68,7 @@
             </td>
             <td style="border: 1px solid black; text-align: center;">
                 <p>Velocidade: 2</p>
-                <p>Manobrabilidade: 2</p>
+                <p>Manobra: 2</p>
                 <p>Poder: 5</p>
             </td>
         </tr>
